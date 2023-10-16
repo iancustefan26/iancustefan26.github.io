@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Contact Me
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Iancu Stefan-Teodor">
+    <meta name = "description" content = "A small page for contact info and messages">
+    <meta name = "keywords" content = "Contact, Us, Me, Iancu, Stefan, Teodor, Messages">
+    <link rel = "stylesheet" href = "styleContact.css">
+</head>
+<body>
+     <div class="background">
+        <form id = "contactForm">
+        <div class="contact-box">
+            <h1>Contact Me</h1>
+            <div class="forms">
+                <div class = "namebox">
+                    <img src="imagesContact/name-icon.png">
+                    <label for="name"></label>
+                    <input type = "text" id = "name" placeholder="Your name">
+                </div>
+                <br>
+                <div class="emailbox">
+                    <img src = "imagesContact/email-icon.png">
+                    <label for="email"></label>
+                    <input type = "text" id = "email" placeholder = "Your email">
+                </div>
+                <br>
+                <div class="messagebox">
+                    <img src = "imagesContact/message-icon.png">
+                    <label for="message"></label>
+                    <textarea id = "message" rows = "6" cols="32" placeholder="Type a message"></textarea>
+                </div>
+            </div>
+            <br>
+            <button class="button-33" id = "button">Send Message</button>
+        </div>
+        </form>
+     </div>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("2D6gQg6fheF01hEhW");
+   })();
+</script>
+<script src = "script.js" type = "text/javascript"></script>
+</body>
+</html>
+
